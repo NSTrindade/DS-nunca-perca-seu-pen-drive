@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dad.css">
+    <title>Formulário de Alunos</title>
+</head>
+<body>
+    <form name="form1" action="dadosalunos.php" method="POST"> 
+        <fieldset style="width: 100%"> 
+            <legend>Dados Pessoais</legend> 
+            <label for="txtnome">Nome:</label>
+            <input type="text" id="txtnome" name="txtnome" size="50"><br> 
+
+            <label for="txttelefone">Telefone:</label>
+            <input type="text" id="txttelefone" name="txttelefone" size="20" maxlength="14"><br> 
+
+            <label for="txtRG">RG:</label>
+            <input type="text" id="txtRG" name="txtRG" size="14" maxlength="15"> 
+        </fieldset> <br> 
+
+        <fieldset style="width: 100%"> 
+            <legend>Opções</legend> 
+            <div class="button-container">
+                <input type="submit" value="Confirmar"> 
+                <input type="reset" value="Limpar"> 
+            </div>
+        </fieldset> <br> 
+
+        <fieldset style="width: 100%"> 
+            <legend>Dados Escolares</legend> 
+            <label for="chocursos">Curso:</label>
+            <select id="chocursos" name="chocursos"> 
+                <option value="Informática">Informática</option>
+                <option value="Administração">Administração</option>
+                <option value="Enfermagem">Enfermagem</option>
+                <option value="Alimentos">Alimentos</option>
+            </select> <br> 
+
+            <label for="txtmodulo">Módulo:</label>
+            <input type="text" id="txtmodulo" name="txtmodulo" size="10"> 
+        </fieldset> 
+    </form>
+</body>
+</html>

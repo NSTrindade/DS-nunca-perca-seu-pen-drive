@@ -1,0 +1,101 @@
+ /* Estilização geral da página */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilização do formulário */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+/* Estilização dos fieldsets */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilização das legendas */
+legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Estilização dos rótulos */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilização dos campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilização do select */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilização dos botões */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão "Confirmar" */
+input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Botão "Limpar" */
+input[type="reset"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Alinhamento dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}

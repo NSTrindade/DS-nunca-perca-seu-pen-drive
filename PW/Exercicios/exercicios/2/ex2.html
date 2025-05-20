@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cals.css">
+    <title>Calcular Salário</title>
+</head>
+<body>
+    <form name="frmsalario" action="calcularsalario.php" method="POST"> 
+        <label for="txthoras">Digite a quantidade de horas trabalhadas:</label>
+        <input type="text" id="txthoras" name="txthoras"><br> 
+
+        <label for="txtvalor">Digite o valor da hora....R$:</label>
+        <input type="text" id="txtvalor" name="txtvalor"><br> 
+
+        <div class="button-container">
+            <input type="submit" value="Calcular Salário">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
