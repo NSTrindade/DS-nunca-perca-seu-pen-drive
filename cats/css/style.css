@@ -1,0 +1,17 @@
+.toggle1{
+    width: 40px;
+    height: 6px;
+    background-color: #FF6554;
+    margin-bottom: 3px;
+    border-radius: 12px;
+    cursor: pointer
+  }
+
+  .toggle{
+    width: 40px;
+    height: 6px;
+    background-color: #FFA255;
+    margin-bottom: 3px;
+    border-radius: 12px;
+    cursor: pointer
+  }
