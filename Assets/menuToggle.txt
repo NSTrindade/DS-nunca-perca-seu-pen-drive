@@ -1,0 +1,16 @@
+//HTML
+<div class="meuToggle">
+  <div class="toggle"></div>
+  <div class="toggle"></div>
+  <div class="toggle"></div>
+</div>
+
+//CSS
+.toggle{
+  width: 25px;
+  height: 3px;
+  background-color: #FF6554;
+  margin-bottom: 3px;
+  border-radius: 12px;
+  cursor: pointer
+}
