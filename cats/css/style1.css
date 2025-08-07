@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.meuToggle {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.toggle, .toggle1 {
+  width: 40px;
+  height: 6px;
+  border-radius: 12px;
+}
+
+/* Cores individuais das barras */
+.toggle {
+  background-color: #FFA255;
+}
+
+.toggle1 {
+  background-color: #528d92;
+}
+
+
+/* HEADER layout geral */
+header {
+  padding: 10px 40px;
+  position: relative;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;   /* alinha itens ao topo */
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ccc; /* ↓ Linha mais fina e discreta */
+}
+
+/* Logo à esquerda */
+header img {
+  height: 50px;
+  left: 20px;
+  align-self: flex-start;
+  margin-top: 0; /* garante que não tenha margem extra */
+
+}
+
+
+
+
+.centrologin {
+  width: 460px;
+  height: 365px;
+  top: 329px;
+  left: 490px;
+}
+
+.centrologin h2 {
+  width: 87px;
+  height: 46px;
+  top: 379px;
+  left: 570px;
+}
