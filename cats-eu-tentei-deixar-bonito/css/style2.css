@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* Voltando para fundo branco conforme solicitado */
+  background-color: #ffffff;
+}
+
+.meuToggle {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.toggle,
+.toggle1 {
+  width: 40px;
+  height: 6px;
+  border-radius: 12px;
+}
+
+/* Cores individuais das barras */
+.toggle {
+  background-color: #ffa255;
+}
+
+.toggle1 {
+  background-color: #ff6554;
+}
+
+/* HEADER layout geral */
+header {
+  padding: 10px 40px;
+  position: relative;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start; /* alinha itens ao topo */
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ccc; /* ↓ Linha mais fina e discreta */
+}
+
+/* Logo à esquerda */
+header img {
+  height: 50px;
+  left: 20px;
+  align-self: flex-start;
+  margin-top: 0; /* garante que não tenha margem extra */
+}
+
+.centrologin {
+    width: 320px;
+    min-height: 240px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 20px 18px 18px 18px;
+    font-family: 'Inter', system-ui, Arial, sans-serif;
+}
+
+/* Título compacto, alinhado à esquerda, negrito */
+.centrologin h2 {
+    color: #ff6554;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 0;
+    align-self: flex-start;
+    letter-spacing: 0.01em;
+}
+
+/* Texto "Novo usuário?" menor e espaçamento reduzido */
+.centrologin p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+/* Link "Crie uma conta!" */
+.centrologin p a {
+    color: #ff6554;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Inputs compactos, largura total, borda fina, cantos arredondados */
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ff6554;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #222;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+}
+
+/* Placeholder claro */
+.formulario input::placeholder {
+    color: #ccc;
+    font-size: 14px;
+    opacity: 1;
+}
+
+/* Efeito focus nos inputs */
+.formulario input:focus {
+    border-color: #ff4a39;
+}
+
+/* Botão compacto, gradiente sutil, borda fina, sombra leve, alinhado à esquerda */
+.formulario button {
+    width: auto;
+    min-width: 90px;
+    height: 32px;
+    background: linear-gradient(90deg, #ffa255 0%, #ff8c54 100%);
+    color: #fff;
+    border: 1px solid #ff6554;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 6px;
+    box-shadow: 0 1px 4px rgba(255,101,84,0.07);
+    align-self: flex-start;
+    padding: 0 18px;
+    letter-spacing: 0.01em;
+}
+
+/* Efeito hover no botão */
+.formulario button:hover {
+    background: linear-gradient(90deg, #ff9944 0%, #ffa255 100%);
+}
+
+/* Remover labels visuais antigos */
+.formulario label[for="email"],
+.formulario label[for="senha"] {
+    display: none;
+}
