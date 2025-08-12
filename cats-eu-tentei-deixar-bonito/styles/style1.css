@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* Voltando para fundo branco conforme solicitado */
+  background-color: #ffffff;
+}
+
+/*Menu Toggle*/
+.menuToggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.toggle {
+  width: 22px;
+  height: 3px;
+  background: #FF6554;
+  margin-right: 10px;
+  position: absolute;
+  border-radius: 4px;
+  cursor: pointer;
+  top: 12px;
+  left: 4px;
+  transition: 0.5s;
+}
+
+.toggle:before {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #FFA255;
+  margin-right: 10px;
+  position: absolute;
+  top: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.toggle:after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #FFA255;
+  margin-right: 10px;
+  position: absolute;
+  bottom: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.toggle.active {
+  transform: rotateZ(-45deg);
+}
+
+.toggle.active::before {
+  top: 0;
+  transform: rotateZ(90deg);
+}
+
+.toggle.active::after {
+  bottom: 0;
+  transform: rotateZ(90deg);
+}
+
+/* HEADER layout geral */
+header {
+  padding: 10px 40px;
+  position: relative;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start; /* alinha itens ao topo */
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ccc; /* ↓ Linha mais fina e discreta */
+}
+
+/* Logo à esquerda */
+header img {
+  height: 50px;
+  left: 20px;
+  align-self: flex-start;
+  margin-top: 0; /* garante que não tenha margem extra */
+}
+
+.centrologin {
+  width: 380px; /* diminuído no eixo x */
+  height: 320px; /* diminuído no eixo y */
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid #bfbfbf;
+}
+
+/* Posicionando título Login à esquerda */
+.centrologin h2 {
+  color: #ff6554;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-left: 40px; /* ajustado para novo tamanho */
+}
+
+/* Estilizando o texto "Novo usuário?" */
+.centrologin p {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  margin-left: 40px; /* alinhado com o login */
+}
+
+/* Estilizando o link "Crie uma conta!" */
+.centrologin p a {
+  color: #ff6554;
+  text-decoration: underline;
+}
+
+/* Atualizando estilos dos inputs para usar placeholders */
+.formulario input[type="email"],
+.formulario input[type="password"] {
+  width: 300px; /* ajustado para novo tamanho */
+  height: 53px;
+  border: 2px solid #ff6554;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo para placeholders */
+.formulario input::placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+/* Efeito focus nos inputs */
+.formulario input:focus {
+  border-color: #ff4a39;
+}
+
+/* Corrigindo cor do botão: fundo #FFA255, borda #ff6554, e subindo um pouco */
+.formulario button {
+  width: 150px;
+  height: 45px;
+  background-color: #ffa255;
+  color: white;
+  border: 2px solid #ff6554;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px; /* subiu o botão */
+}
+
+/* Efeito hover no botão */
+.formulario button:hover {
+  background-color: #ff9944;
+}
+
+/* Removendo estilos antigos dos labels que não são mais usados */
+.formulario input[type="senha"] {
+  width: 300px;
+  height: 53px;
+  border: 2px solid #ff6554;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 18px;
+  color: #333;
+  box-sizing: border-box;
+}
+
