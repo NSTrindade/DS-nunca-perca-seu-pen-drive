@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards de Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-grande">
+            <h3>Card 1</h3>
+            <p>Descrição do Card 1.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>Descrição do Card 2.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>Descrição do Card 3.</p>
+        </div>
+        <div class="card card-grande">
+            <h3>Card 4</h3>
+            <p>Descrição do Card 4.</p>
+        </div>
+        <div class="card">
+            <h3>Card 5</h3>
+            <p>Descrição do Card 5.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+}
+
+/* Card grande que ocupa 2 colunas e 2 linhas */
+.card-grande {
+    grid-column: span 2;
+    grid-row: span 2;
+}
